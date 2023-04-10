@@ -82,6 +82,7 @@ a {
     }
 }
 
+
 // Sections
 
 .header {
@@ -225,4 +226,112 @@ a {
         line-height: 36px;
     }
 
+}
+
+.benefits {
+    margin-bottom: 100px;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__images {
+        margin-right: 95px;
+    }
+
+    &__content {
+        color: #fff;
+        width: 100%;
+    }
+
+    &__title {
+        margin-left: 185px;
+    }
+
+    &__list {
+        padding: 25px 0 25px 185px;
+        list-style: none;
+        background-color: #21062A;
+        max-width: 785px;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+        max-width: 320px;
+    }
+
+    &__item-num {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 53px;
+        text-transform: uppercase;
+    }
+
+    &__item-title {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    &__item-text {
+        color: #C4C4C4;
+    }
+}
+
+.carousel {
+    margin-bottom: 100px;
+
+    &__inner {
+        margin: 0 -7px;
+    }
+
+    &__item {
+        margin: 0 7px;
+    }
+
+    &__item-box {
+        border: 1px solid #C4C4C4;
+        padding: 6px 6px 16px 6px;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    &__item-box:hover {
+        color: #fff;
+        background-color: #5A0D67;
+        border-color: #5A0D67;
+    }
+
+    &__item-img {
+        margin-bottom: 23px;
+        max-width: 100%;
+    }
+
+    &__item-title {
+        font-weight: 300;
+        margin-bottom: 5px;
+
+    }
+}
+
+.carousel .slick-dots {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.carousel .slick-dots button {
+    font-size: 0;
+    border: none;
+    padding: 0;
+    margin: 0 10px;
+    background-color: #C4C4C4;
+    width: 50px;
+    height: 1px;
+}
+
+.carousel .slick-active button {
+    background-color: #5A0D67;
+    height: 3px;
 }
