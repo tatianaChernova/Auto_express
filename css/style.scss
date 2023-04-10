@@ -26,7 +26,7 @@ a {
     padding: 0 10px;
 }
 
-.button {
+.button-main {
     padding: 14px 54px 15px;
     font-size: 14px;
     line-height: 21px;
@@ -63,7 +63,7 @@ a {
 }
 
 .title {
-    margin-bottom: 50px;
+    margin-bottom: 47px;
     color: #21062A;
     font-weight: 400;
     font-size: 36px;
@@ -77,8 +77,17 @@ a {
         width: 80px;
         height: 3px;
         background-color: #21062A;
-        top: 20px;
-        margin-left: 20px;
+        top: 22px;
+        margin-left: 24px;
+    }
+}
+
+.social {
+    display: flex;
+    align-items: center;
+
+    &__link {
+        margin: 0 5px;
     }
 }
 
@@ -107,11 +116,12 @@ a {
     }
 
     &__content {
-        padding-top: 60px;
+        padding-top: 55px;
         position: relative;
     }
 
     &__title {
+        margin-bottom: -10px;
         font-weight: 400;
         font-size: 72px;
         line-height: 107px;
@@ -119,7 +129,7 @@ a {
     }
 
     &__subtitle {
-        margin-bottom: 30px;
+        margin-bottom: 25px;
         font-weight: 400;
         font-size: 36px;
         line-height: 53px;
@@ -127,18 +137,12 @@ a {
     }
 
     &__text {
-        margin-bottom: 30px;
+        margin-bottom: 28px;
         max-width: 800px;
     }
 
     &__social {
-        padding: 70px 0 20px 65px;
-        display: flex;
-        align-items: center;
-    }
-
-    &__social-link {
-        margin-right: 10px;
+        padding: 71px 0 42px 61px;
     }
 
     &__images {
@@ -147,6 +151,7 @@ a {
         bottom: -270px;
     }
 }
+
 
 .services {
     padding-top: 300px;
@@ -170,7 +175,7 @@ a {
     }
 
     &__content-textbox {
-        margin-bottom: 57px;
+        margin-bottom: 63px;
     }
 
     &__content-text {
@@ -186,7 +191,7 @@ a {
         margin-bottom: 12px;
         border: 2px solid #C4C4C4;
         width: 450px;
-        padding: 10px 15px 10px 113px;
+        padding: 0px 15px 9px 111px;
         counter-increment: my-counter;
         position: relative;
         transition: all .5s;
@@ -194,8 +199,8 @@ a {
         &::before {
             content: '0' counter(my-counter);
             position: absolute;
-            left: 20px;
-            top: 15px;
+            left: 25px;
+            top: 8px;
             font-weight: 400;
             font-size: 36px;
             line-height: 53px;
@@ -216,8 +221,6 @@ a {
         &:hover::before {
             color: #5A0D67;
         }
-
-
     }
 
     &__item-title {
@@ -225,7 +228,6 @@ a {
         font-size: 24px;
         line-height: 36px;
     }
-
 }
 
 .benefits {
@@ -236,6 +238,7 @@ a {
     }
 
     &__images {
+        margin-left: -10px;
         margin-right: 95px;
     }
 
@@ -245,7 +248,7 @@ a {
     }
 
     &__title {
-        margin-left: 185px;
+        margin-left: 182px;
     }
 
     &__list {
@@ -261,6 +264,7 @@ a {
     }
 
     &__item-num {
+        margin-bottom: -12px;
         font-weight: 400;
         font-size: 36px;
         line-height: 53px;
@@ -268,6 +272,7 @@ a {
     }
 
     &__item-title {
+
         font-weight: 300;
         font-size: 24px;
         line-height: 36px;
@@ -315,7 +320,7 @@ a {
 }
 
 .carousel .slick-dots {
-    margin-top: 50px;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     list-style: none;
@@ -334,4 +339,98 @@ a {
 .carousel .slick-active button {
     background-color: #5A0D67;
     height: 3px;
+}
+
+.contacts {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        margin-top: 48px;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+    }
+
+    &__item-title {
+        color: #5A0D67;
+    }
+
+    &__form {
+        padding: 50px 75px 57px;
+        background-color: #21062A;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+        margin-left: 53px;
+        text-align: left;
+        color: #fff;
+
+        &::after {
+            background-color: #fff;
+        }
+    }
+
+    &__input {
+        margin-bottom: 12px;
+        background-color: transparent;
+        width: 450px;
+        height: 75px;
+        color: #fff;
+        border: 1px solid #fff;
+        display: block;
+        font-size: 24px;
+        padding: 0 15px;
+
+        &::placeholder {
+            color: #C4C4C4;
+            text-align: center;
+            font-family: 'Oswald', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+
+    &__btn {
+        padding: 14px 74px 15px;
+        margin-top: 63px;
+        border: none;
+        background-color: #5A0D67;
+        color: #fff;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all .5s;
+
+        &:hover {
+            background-color: #fff;
+            color: #5A0D67;
+        }
+    }
+}
+
+.footer {
+    background-color: #21062A;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        height: 100px;
+    }
 }
