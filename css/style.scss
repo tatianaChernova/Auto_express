@@ -434,3 +434,278 @@ a {
         height: 100px;
     }
 }
+
+// Adaptive
+@media (max-width: 1140px) {
+    .services {
+        &__item {
+            &:hover {
+                width: 450px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        &__images {
+            width: 80%;
+        }
+    }
+
+    .services {
+        padding-top: 250px;
+
+        &__inner {
+            flex-wrap: wrap;
+        }
+
+        &__list {
+            margin-bottom: 30px;
+            width: 100%;
+            order: -1;
+        }
+
+        &__item {
+            width: 100%;
+
+            &:hover {
+                width: 100%;
+            }
+        }
+
+        &__content {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+
+    .benefits {
+        &__images {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        &__phone {
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        &__title {
+            font-size: 54px;
+            line-height: 74px;
+        }
+
+        &__subtitle {
+            margin-bottom: 20px;
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        &__social {
+            padding: 30px 0px 20px 53px;
+        }
+
+        &__images {
+            width: 80%;
+        }
+    }
+
+    .contacts {
+        &__inner {
+            display: block;
+            text-align: center;
+        }
+
+        &__title {
+            text-align: center;
+            margin-left: 0;
+        }
+
+        &__list {
+            margin-bottom: 30px;
+        }
+
+        &__input {
+            width: 100%;
+        }
+
+        &__btn {
+            margin-top: 20px;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits {
+        &__inner {
+            text-align: center;
+        }
+
+        &__title {
+            margin-left: 0;
+        }
+
+        &__list {
+            padding: 25px 15px;
+        }
+
+        &__item {
+            max-width: 100%;
+        }
+
+    }
+}
+
+@media (max-width: 650px) {
+    .footer {
+        &__inner {
+            padding: 20px 0;
+            height: auto;            
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+        &__social{
+            width: 100%;
+            justify-content: center;
+            margin: 25px 0;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .title {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 30px;
+        text-align: center;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .header {
+        &__content {
+            padding-top: 0;
+            text-align: center;
+        }
+
+        &__social {
+            padding: 30px 0 20px 0;
+        }
+    }
+
+    .services {
+        padding-top: 150px;
+
+        &__content {
+            text-align: center;
+        }
+
+        &__item {
+            &::before {
+                top: 7px;
+            }
+        }
+    }
+
+    .benefits {
+        &__item-num {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    .carousel {
+        &__item-img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .logo {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .header {
+        &__top {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__images {
+            position: static;
+            width: 100%;
+        }
+    }
+
+    .services {
+        padding-top: 50px;
+
+        &__inner {
+            margin-bottom: 50px;
+        }
+
+        &__item {
+            padding-left: 60px;
+
+            &::before {
+                left: 15px;
+            }
+        }
+    }
+
+    .button--decor {
+
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+
+    .benefits,
+    .carousel {
+        margin-bottom: 50px;
+    }
+
+    .carousel .slick-dots button {
+        width: 15px;
+    }
+
+    .contacts {
+        &__form {
+            padding: 50px 10px 57px;
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    .header {
+        &__title {
+            font-size: 44px;
+            line-height: 50px;
+        }
+    }
+}
